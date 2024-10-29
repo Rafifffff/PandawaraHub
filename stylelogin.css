@@ -36,14 +36,6 @@ body {
   background: linear-gradient(180deg, #1F5F8B 17%, #253B6E 50%, black 90%);
 }
 
-.input-divider {
-  width: 303px;
-  height: 0px;
-  left: 92px;
-  position: absolute;
-  border: 3px #253B6E solid;
-}
-
 .login-button-container {
   width: 340px;
   height: 70px;
