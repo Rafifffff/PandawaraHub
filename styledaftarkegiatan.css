@@ -1,0 +1,161 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(to bottom, #253B6E, #000000);
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.report-link {
+  display: flex;
+  align-items: center;
+}
+
+.report-icon {
+  width: 20px;
+  margin-left: 5px;
+}
+
+.bell-icon,
+.profile-icon {
+  width: 25px; /* Atur ukuran yang sama untuk kedua ikon */
+  height: 25px; /* Tambahkan tinggi agar kedua ikon seragam */
+  margin-left: 15px; /* Atur margin yang sama jika diperlukan */
+}
+
+.search {
+  background: #1F5F8B;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  font-size: 14px;
+}
+
+.tombol {
+  padding: 15px;
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 200px;
+}
+
+.tombol:hover {
+  background: linear-gradient(135deg, #457b9d, #1d3557);
+}
+
+.search input {
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  width: 110px;
+  outline: none;
+  background-color: white;
+}
+
+
+  .articles {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    background: linear-gradient(180deg, #1F5F8B 17%, #253B6E 50%, black 90%);
+    color: white;
+  }
+  
+  .articles h1 {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+  
+  .article-card {
+    display: inline-block;
+    width: 400px;
+    height: 517px;
+    margin: 20px;
+    text-align: left;
+    background: white;
+    border-radius: 30px;
+    padding: 20px;
+    color: black; 
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+
+  }
+  
+  .article-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .article-card time {
+    display: block;
+    margin-top: 40px;
+    font-size: 12px;
+    color: black;
+  }
+
+  .article-card button {
+    padding: 5px 30px; 
+    border: none; 
+    cursor: pointer; 
+    color: #253B6E;   
+    display: inline-block; 
+    margin-left: 130px;
+    text-align: center;
+    color: #D2ECF9;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    letter-spacing: -0.14px;
+    margin-top: 10px;
+  }
