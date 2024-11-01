@@ -47,9 +47,9 @@ body {
 
 .bell-icon,
 .profile-icon {
-  width: 25px; /* Atur ukuran yang sama untuk kedua ikon */
-  height: 25px; /* Tambahkan tinggi agar kedua ikon seragam */
-  margin-left: 15px; /* Atur margin yang sama jika diperlukan */
+  width: 25px; 
+  height: 25px; 
+  margin-left: 15px; 
 }
 
 .search {
