@@ -18,14 +18,29 @@
       <a href="#">Home</a>
       <a href="daftarkegiatan.html">Event</a>
       <a href="/donation">Donation</a>
-      <a href="/eco-market">Eco-Market</a>
-      <a href="/report" class="report-link">Report</a>
+
+      <div class="menu-item">
+        <a href="#" id="ecoDropdownButton" onclick="toggleDropdown(event, 'ecoDropdown')">Eco-Market</a>
+        <ul id="ecoDropdown" class="dropdown" tabindex="0">
+            <li><a href="sell.html">Jual</a></li>
+            <li><a href="buy.html">Beli</a></li>
+        </ul>
+    </div>
+
+      <div class="menu-item">
+        <a href="/report" class="report-link" onclick="toggleDropdown(event, 'reportDropdown')">Report</a>
+        <ul id="reportDropdown" class="dropdown">
+          <li><a href="/report/event">Event</a></li>
+          <li><a href="/report/donasi">Donasi</a></li>
+          <li><a href="/report/dampak">Dampak</a></li>
+        </ul>
+      </div>
       <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/607d8cac62200f80fdfc7872e2de376266c5a8b1f93e34d08255a25bd3c0a838" alt="Report Icon" class="report-icon">
     </nav>
     <nav class="Icon">
       <img src="bell.png" alt="Bell Icon" class="bell-icon">
       <img src="profile.png" alt="Profile Icon" class="profile-icon"> <!-- Tambahkan class .profile-icon -->
-    </nav>    
+    </nav>   
   </header>
 
   <section class="hero">
@@ -50,48 +65,51 @@
       <h3>Lorem Ipsum</h3>
       <img src="pngwing.com.png" alt="Feature 1">
       <p>Bergabunglah dengan <br> komunitas peduli lingkungan <br> untuk beraksi</p>
-      <button class="lorem-ipsum-button">Lorem ipsum</button> 
+      <a href="daftarkegiatan.html"><button class="lorem-ipsum-button">Lorem ipsum</button></a>
     </div>
 
     <div class="feature-card">
       <h3>Lorem Ipsum</h3>
       <img src="pngwing.com (1).png" alt="Feature 2">
       <p>Bergabunglah dengan <br> komunitas peduli lingkungan <br> untuk beraksi</p>
-      <button class="lorem-ipsum-button">Lorem ipsum</button> 
+      <a href="donasi.html"><button class="lorem-ipsum-button">Lorem ipsum</button></a>
     </div>
 
     <div class="feature-card">
       <h3>Lorem Ipsum</h3>
       <img src="pngwing.com (2).png" alt="Feature 3">
-    <p>Bergabunglah dengan <br> komunitas peduli lingkungan <br> untuk beraksi</p>
-      <button class="lorem-ipsum-button">Lorem ipsum</button> 
+      <p>Bergabunglah dengan <br> komunitas peduli lingkungan <br> untuk beraksi</p>
+      <a href="buy.html"><button class="lorem-ipsum-button">Lorem ipsum</button></a>
     </div>
-  </section>
+</section>
+
 
   <section class="tulisan-artikel">
     <hi>Artikel</hi>
   </section>
 
   <section class="articles">
-    <div class="article-card">
+    <a href="https://ppid.menlhk.go.id/berita/siaran-pers/6444/aksi-bersih-pantai-upaya-bangkitkan-kesadaran-kolektif-tangani-sampah" target="_blank" class="article-card">
       <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2d2fb5fc3ac929b9e468aaada61b5d0323d0eade185c0f294e78c5d25b7bf79d" alt="Article 1">
       <time>Jumat, 13/09/2024</time>
       <h3>Lorem ipsum dolor sit amet consectetur. Et tortor sed ...</h3>
-    </div>
-    <div class="article-card">
+    </a>
+    <a href="https://www.kompasiana.com/masriodwinurzulim6549/664b61fb1470931fc0476e04/kegiatan-reboisasi-hutan-tretes-desa-wonorejo" target="_blank" class="article-card">
       <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a26227d62056d80a0c6a1d3a062c3402f763d6275c2da3b5892aa8f4126224ca" alt="Article 2">
       <time>Senin, 30/08/2024</time>
       <h3>Lorem ipsum dolor sit amet consectetur. Et tortor sed ...</h3>
-    </div>
-    <div class="article-card">
+    </a>
+    <a href="https://smkn3pacitan.sch.id/bersih-bersih-pesisir-pantai-meningkatkan-kesadaran-kebersihan-lingkungan/" target="_blank" class="article-card">
       <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a2d71771e300ed86d0cc614fa96046dd09972e9fef426d42e40130c3c00c770a" alt="Article 3">
       <time>Kamis, 23/08/2024</time>
       <h3>Lorem ipsum dolor sit amet consectetur. Et tortor sed ...</h3>
-    </div>
-  </section>
+    </a>
+</section>
+
   <footer>
     <p>© 2024 PandawaraHub. All rights reserved.</p>
   </footer>
+  <script src="homepage.js"></script>
 </body>
 
 </html>

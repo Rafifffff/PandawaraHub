@@ -16,16 +16,31 @@
     </div>
     <nav class="nav">
       <a href="homepage.html">Home</a>
-      <a href="#">Event</a>
-      <a href="donasi.html">Donation</a>
-      <a href="/eco-market">Eco-Market</a>
-      <a href="/report" class="report-link">Report</a>
+      <a href="daftarkegiatan.html">Event</a>
+      <a href="/donation">Donation</a>
+
+      <div class="menu-item">
+        <a href="#" id="ecoDropdownButton" onclick="toggleDropdown(event, 'ecoDropdown')">Eco-Market</a>
+        <ul id="ecoDropdown" class="dropdown" tabindex="0">
+            <li><a href="sell.html">Jual</a></li>
+            <li><a href="buy.html">Beli</a></li>
+        </ul>
+    </div>
+
+      <div class="menu-item">
+        <a href="/report" class="report-link" onclick="toggleDropdown(event, 'reportDropdown')">Report</a>
+        <ul id="reportDropdown" class="dropdown">
+          <li><a href="/report/event">Event</a></li>
+          <li><a href="/report/donasi">Donasi</a></li>
+          <li><a href="/report/dampak">Dampak</a></li>
+        </ul>
+      </div>
       <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/607d8cac62200f80fdfc7872e2de376266c5a8b1f93e34d08255a25bd3c0a838" alt="Report Icon" class="report-icon">
     </nav>
     <nav class="Icon">
       <img src="bell.png" alt="Bell Icon" class="bell-icon">
       <img src="profile.png" alt="Profile Icon" class="profile-icon"> <!-- Tambahkan class .profile-icon -->
-    </nav>    
+    </nav>   
   </header>
   <section class="search">
     <div class="search-container">
@@ -58,3 +73,5 @@
           </div>
         </div>
     </section>
+    <script src="homepage.js"></script>
+</body>

@@ -7,6 +7,9 @@ body {
   }
   
   .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +37,46 @@ body {
     color: white;
     text-decoration: none;
   }
+
+  /* Dropdown styling */
+.menu-item {
+  position: relative; /* Set to relative for dropdown positioning */
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #253B6E;
+  padding: 10px 0;
+  border-radius: 5px;
+  min-width: 150px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Style item dropdown */
+.dropdown li {
+  list-style: none;
+}
+
+.dropdown li a {
+  padding: 10px 10px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.dropdown li a:hover {
+  background-color: #5a5a5a;
+}
+
+.show {
+  display: block;
+}
   
   .report-link {
     display: flex;
@@ -42,7 +85,7 @@ body {
   
   .report-icon {
     width: 20px;
-    margin-left: 5px;
+    margin-left: -15px;
   }
   
   .bell-icon,
