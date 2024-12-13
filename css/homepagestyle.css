@@ -38,9 +38,8 @@ body {
   text-decoration: none;
 }
 
-/* Dropdown styling */
 .menu-item {
-  position: relative; /* Set to relative for dropdown positioning */
+  position: relative; 
 }
 
 .dropdown {
@@ -56,23 +55,43 @@ body {
   z-index: 10;
 }
 
-/* Style item dropdown */
-.dropdown li {
+.dropdown, .profile-dropdown {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  background-color: #253B6E;
+  padding: 10px 0;
+  border-radius: 5px;
+  min-width: 150px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown li, .profile-dropdown li {
   list-style: none;
 }
 
-.dropdown li a {
-  padding: 10px 10px;
+.dropdown li a, .profile-dropdown li a {
   color: white;
   text-decoration: none;
+  padding: 10px 15px;
   display: block;
   font-size: 16px;
   transition: background-color 0.3s;
 }
 
-.dropdown li a:hover {
+.dropdown li a:hover, .profile-dropdown li a:hover {
   background-color: #5a5a5a;
 }
+
+.show {
+  display: block; 
+}
+
+.profile-container {
+  position: relative;
+}
+
 
 .show {
   display: block;
@@ -88,11 +107,17 @@ body {
   margin-left: -15px;
 }
 
+nav.Icon {
+  display: flex;
+  align-items: center; 
+  gap: 15px; 
+}
+
 .bell-icon,
 .profile-icon {
-  width: 25px; 
-  height: 25px; 
-  margin-left: 15px; 
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 
 
@@ -204,6 +229,7 @@ filter: blur(3px);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   font-size: 25px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
 .feature-card img {
@@ -235,7 +261,7 @@ font-size: 18px;
 color: #253B6E; 
 text-align: center; 
 display: inline-block; 
-margin-left: 63px;
+margin-left: 80px;
 }
 
 .tulisan-artikel {
@@ -297,4 +323,25 @@ footer {
   background: linear-gradient(to bottom, #253B6E, #000000);
   background-color: #2f54eb;
   color: white;
+}
+
+.profile-dropdown.show {
+  display: block;
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 90%; 
+  right: 0px;
+  background-color: #253B6E;
+  padding: 10px 0;
+  border-radius: 5px;
+  min-width: 150px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: none; 
 }
