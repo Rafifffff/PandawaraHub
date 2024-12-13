@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data Pabrik</title>
+</head>
+<body>
+    <h1>Tambah Data Pabrik Baru</h1>
+    <form action="../php/add_pabrik.php" method="POST" enctype="multipart/form-data">
+        <label for="nama">Nama Pabrik:</label>
+        <input type="text" name="nama" id="nama" required><br><br>
+
+        <label for="deskripsi_pabrik">Deskripsi Pabrik:</label>
+        <textarea name="deskripsi_pabrik" id="deskripsi_pabrik" rows="5"></textarea><br><br>
+
+        <label for="lokasi">Lokasi Pabrik:</label>
+        <input type="text" name="lokasi" id="lokasi"><br><br>
+
+        <label for="image">Unggah Gambar Pabrik:</label>
+        <input type="file" name="image" id="image" accept="image/*" required><br><br>
+
+        <button type="submit" name="submit">Tambah Pabrik</button>
+    </form>
+</body>
+</html>
+
+
+

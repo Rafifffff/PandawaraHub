@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+  background: linear-gradient(180deg, #D2ECF9 0%, #999999 100%);
+}
+
+.overlay {
+  width: 1440px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 1440px;
+  height: 1024px;
+  background: linear-gradient(180deg, #1F5F8B 17%, #253B6E 50%, black 90%);
+}
+
+.login-button-container {
+  width: 340px;
+  height: 70px;
+  left: 102px;
+  top: 652px;
+  position: absolute;
+}
+
+.login-button-background {
+  width: 340px;
+  height: 56px;
+  left: 0px;
+  top: 8px;
+  position: absolute;
+  background: linear-gradient(360deg, #253B6E 0%, #1891AC 100%);
+  border-radius: 25px;
+}
+
+.login-button-text {
+  width: 267px;
+  height: 70px;
+  left: 37px;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+  color: #D2ECF9;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 70px;
+  word-wrap: break-word;
+}
+
+.login-box {
+  width: 651px;
+  height: 442px;
+  left: 595px;
+  top: 245px;
+  position: absolute;
+}
+
+.login-box-background {
+  width: 651px;
+  height: 442px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: rgba(210, 236, 249, 0.30);
+  box-shadow: -4px 4px 4px rgba(24, 145, 172, 0.24) inset;
+  border-radius: 55px;
+}
+
+.login-box-content {
+  width: 377px;
+  height: 377px;
+  left: 226px;
+  top: 100px;
+  position: absolute;
+  background: rgba(217, 217, 217, 0);
+}
+
+.login-box-title {
+  width: 238px;
+  height: 70px;
+  left: 296px;
+  top: 36px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  line-height: 70px;
+  word-wrap: break-word;
+}
+
+.create-account-message {
+  width: 125px;
+  height: 17px;
+  padding-bottom: 5.10px;
+  left: 352px;
+  top: 352px;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: center;
+  display: inline-flex;
+}
+
+.create-account-message-text {
+  width: 135.30px;
+  height: 11.90px;
+  color: #253B6E;
+  font-size: 13px;
+  font-family: Poppins;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.forget-password-message {
+  width: 115px;
+  height: 17px;
+  padding-bottom: 5.10px;
+  left: 451px;
+  top: 258px;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: center;
+  display: inline-flex;
+}
+
+.forget-password-message-text {
+  width: 124.48px;
+  height: 11.90px;
+  color: #253B6E;
+  font-size: 13px;
+  font-family: Poppins;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.login-button {
+  padding: 12px;
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+  width: 278px;
+  margin-top: 45px;
+  margin-left: 43px;
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #457b9d, #1d3557);
+}
+
+.image-container {
+  width: 602px;
+  height: 588px;
+  left: 194px;
+  top: 189px;
+  position: absolute;
+}
+
+.image-background {
+  width: 556px;
+  height: 552px;
+  left: 21px;
+  top: 0px;
+  position: absolute;
+  background: linear-gradient(180deg, #D2ECF9 0%, #1F5F8B 100%);
+  border-radius: 55px;
+}
+
+.image {
+  width: 596px;
+  height: 587px;
+  left: 0px;
+  top: 1px;
+  position: absolute;
+}
+
+.forget-password-message-text {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.create-account-message-text {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin-bottom: 15px;
+  width: 278px;
+}
+
+.input-field label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  margin-left: 35px;
+  color: white;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #D2ECF9;
+  font-size: 14px;
+  margin-left: 35px;
+}
+
+
+
+
+
+
+
+  
